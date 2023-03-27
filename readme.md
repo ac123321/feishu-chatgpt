@@ -284,6 +284,27 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 </details>
 
 <details>
+    <summary>docker-compose 部署</summary>
+<br>
+
+编辑 docker-compose.yaml，通过 environment 配置相应环境变量（或者通过 volumes 挂载相应配置文件），然后运行下面的命令即可
+```bash
+# 构建镜像
+docker compose build
+
+# 启动服务
+docker compose up -d
+
+# 停止服务
+docker compose down
+```
+
+事件回调地址: http://IP:9000/webhook/event
+卡片回调地址: http://IP:9000/webhook/card
+
+</details>
+
+<details>
     <summary>二进制安装包部署</summary>
 <br>
 
@@ -295,6 +316,9 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 卡片回调地址: http://IP:9000/webhook/card
 
 </details>
+
+
+
 
 ## 详细配置步骤
 
